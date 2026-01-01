@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="style.css">
+    <title>Frontend Mentor | [Blogr]</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 44%, 74%);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+        <section class="section__hero">
+    <header>
+      <nav class="header-nav">
+        <img src="./images/logo.svg" alt="logo" class="top-logo" />
+        <ul class="headerNav-ul">
+          <div class="li-dropdown">
+          <li id="drop-menu1">
+            Product<img
+              src="./images/icon-arrow-light.svg"
+              alt="chevron"
+              class="chevron"
+            />
+          </li>
+              <ul class="dropdown-ul hide" id="dropdown1">
+      <li>Overview</li>
+      <li>Pricing</li>
+      <li>Marketplace</li>
+      <li>Features</li>
+      <li>Integrations</li>
+    </ul>
+        </div>
+
+        <div class="li-dropdown">
+          <li id="drop-menu2">
+            Company<img
+              src="./images/icon-arrow-light.svg"
+              alt="chevron"
+              class="chevron"
+            />
+          </li>
+        
+    <ul class="dropdown-ul hide" id="dropdown2">
+      <li>About</li>
+      <li>Team</li>
+      <li>Blog</li>
+      <li>Careers</li>
+    </ul>
+
+        </div>
+        <div class="li-dropdown">
+          <li id="drop-menu3">
+            Connect<img
+              src="./images/icon-arrow-light.svg"
+              alt="chevron"
+              class="chevron"
+            />
+          </li>
+  
+        <ul class="dropdown-ul hide" id="dropdown3">
+      <li>Contact</li>
+      <li>Newsletter</li>
+      <li>LinkedIn</li>
+    </ul>
+  
+      </div>
+            </ul>
+      </nav>
+      <div class="header-btns">
+      <button class="text-btn">Login</button>
+      <button class="filled-btn">Sign Up</button></div>
+    </header>
+
+    <!-- === hamburger menu === -->
+
+    <div class="hamburger-menu">
+  <div class="accordion">
+  <p class="accordion-title">Product<img src="./images/icon-arrow-dark.svg" alt="chevron" class="hamburger-chevron"></p>
+<ul class="accordion-ul">
+      <li>Overview</li>
+      <li>Pricing</li>
+      <li>Marketplace</li>
+      <li>Features</li>
+      <li>Integration</li></ul>
+</div>
+
+<div class="accordion">
+  <p class="accordion-title">Company<img src="./images/icon-arrow-dark.svg" alt="chevron" class="hamburger-chevron"></p>
+ <ul class="accordion-ul">
+      <li>About</li>
+      <li>Team</li>
+      <li>Blog</li>
+      <li>Careers</li>
+    </ul>
+</div>
+
+<div class="accordion" id="accordion3">
+  <p class="accordion-title">Connect<img src="./images/icon-arrow-dark.svg" alt="chevron" class="hamburger-chevron"></p>
+   <ul class="accordion-ul">
+      <li>Contact</li>
+      <li>Newsletter</li>
+      <li>LinkedIn</li>
+    </ul>
+</div>
+
+
+<div class="hamburger-btns">
+<button class="text-btn" id="hamburger-textBtn">Login</button>
+<button class="filled-btn" id="hamburger-filledBtn">Sign Up</button></div></div>
+    </div>
+
+    <!-- === hero section === -->
+
+
+      <h1>A modern publishing platform</h1>
+      <h3>Grow your audience and build your online brand</h3>
+      <div class="two-buttons">
+        <button class="filled-btn" id="start-btn">Start for Free</button>
+        <button class="outlined-btn" id="more-btn">Learn More</button>
+      </div>
+    </section>
+
+    <!-- === designed for the future section === -->
+    <section class="section__designed">
+      <h2 class="section__designed-h2">Designed for the future</h2>
+      <div class="section__designed-wrapper">
+      <div class="article-container">
+      <article>
+        <p class="article-title">Introducing an extensible editor</p>
+        <p class="article-text">
+          Blogr features an exceedingly intuitive interface which lets you focus
+          on one thing: creating content. The editor supports management of
+          multiple blogs and allows easy manipulation of embeds such as images,
+          videos, and Markdown. Extensibility with plugins and themes provide
+          easy ways to add functionality or change the looks of a blog.
+        </p>
+      </article>
+
+      <article>
+        <p class="article-title">Robust content management</p>
+        <p class="article-text">
+          Flexible content management enables users to easily move through
+          posts. Increase the usability of your blog by adding customized
+          categories, sections, format, or flow. With this functionality, you’re
+          in full control.
+        </p>
+      </article></div>
+      <div class="section__designed-img"></div></div>
+    </section>
+
+    <!-- === state of the art section === -->
+
+    <section class="section__state">
+      <div class="section__state-wrapper">
+      <div class="section__state-img"></div>
+      <div class="section__state-text">
+      <h2 class="section__state-h2">State of the Art Infrastructure</h2>
+      <p class="section__state-p">
+        With reliability and speed in mind, worldwide data centers provide the
+        backbone for ultra-fast connectivity. This ensures your site will load
+        instantly, no matter where your readers are, keeping your site
+        competitive.
+      </p></div></div>
+    </section>
+
+    <!-- === free-open section === -->
+
+    <section class="section__free">
+      <div class="section__free-img"></div>
+      <div class="section__free-container">
+      <article>
+        <p class="article-title">Free, open, simple</p>
+        <p class="article-text">
+          Blogr is a free and open source application backed by a large
+          community of helpful developers. It supports features such as code
+          syntax highlighting, RSS feeds, social media integration, third-party
+          commenting tools, and works seamlessly with Google Analytics. The
+          architecture is clean and is relatively easy to learn.
+        </p>
+      </article>
+
+      <article>
+        <p class="article-title">Powerful tooling</p>
+        <p class="article-text">
+          Batteries included. We built a simple and straightforward CLI tool
+          that makes customization and deployment a breeze, but capable of
+          producing even the most complicated sites.
+        </p>
+      </article></div>
+    </section>
+    </main>
+
+    <!-- === footer === -->
+    <footer>
+      <img src="./images/logo.svg" alt="logo" class="footer-logo" />
+      <nav class="footer-nav">
+        <div class="footerNav-container">
+          <p class="footerNav-title">Product</p>
+          <ul class="footer-ul">
+            <li >Overview</li>
+            <li >Pricing</li>
+            <li >Marketplace</li>
+            <li >Features</li>
+            <li >Integrations</li>
+          </ul>
+        </div>
+
+        <div class="footerNav-container">
+          <p class="footerNav-title">Company</p>
+          <ul class="footer-ul">
+            <li>About</li>
+            <li>Team</li>
+            <li>Blog</li>
+            <li>Careers</li>
+          </ul>
+        </div>
+
+        <div class="footerNav-container">
+          <p class="footerNav-title">Connect</p>
+          <ul class="footer-ul">
+            <li>Contact</li>
+            <li>Newsletter</li>
+            <li>LinkedIn</li>
+          </ul>
+        </div>
+      </nav>
+    </footer>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by KA.
+    </div>
+  </body>
+</html>

@@ -709,29 +709,52 @@ footer {
 }
 
 @media screen and (max-width: 28.125rem) {
+  header {
+    padding: 24px var(--padding);
+  }
+  .hamburger-menu {
+    top: 100px;
+  }
   h1 {
-    font-size: 56px;
+    padding-top: 40px;
+    font-size: 3rem;
+  }
+
+  .two-buttons {
+    flex-direction: column;
   }
 
   .section__designed-h2,
   .section__state-h2 {
-    font-size: 40px;
+    font-size: 2rem;
   }
   .section__designed {
     padding-top: 3.5rem;
   }
   .section__designed-img {
-    height: 300px;
+    height: 200px;
+    position: top;
   }
 
   .section__state {
-    height: 40.625rem;
+    height: 680px;
+  }
+
+  .section__state-wrapper {
+    top: -50px;
   }
   .section__state-img {
-    height: 25rem;
+    background-size: contain;
+    height: 240px;
   }
 
   .section__free-img {
     height: 22.5rem;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .section__state {
+    height: 800px;
   }
 }

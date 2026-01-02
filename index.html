@@ -34,7 +34,7 @@
         <img src="./images/logo.svg" alt="logo" class="top-logo" />
         <ul class="headerNav-ul">
           <div class="li-dropdown">
-          <li id="drop-menu1">
+          <li class="drop-menu" id="drop-menu1">
             Product<img
               src="./images/icon-arrow-light.svg"
               alt="chevron"
@@ -51,7 +51,7 @@
         </div>
 
         <div class="li-dropdown">
-          <li id="drop-menu2">
+          <li class="drop-menu"id="drop-menu2">
             Company<img
               src="./images/icon-arrow-light.svg"
               alt="chevron"
@@ -68,7 +68,7 @@
 
         </div>
         <div class="li-dropdown">
-          <li id="drop-menu3">
+          <li class="drop-menu"id="drop-menu3">
             Connect<img
               src="./images/icon-arrow-light.svg"
               alt="chevron"
@@ -88,14 +88,16 @@
       <div class="header-btns">
       <button class="text-btn">Login</button>
       <button class="filled-btn">Sign Up</button></div>
+      <img src="./images/icon-hamburger.svg" alt="hamburger-icon" class="hamburger-icon hide">
+      <img src="./images/icon-close.svg" alt="close" class="close-btn hide">
     </header>
 
     <!-- === hamburger menu === -->
-
+<div class="overlay hide"></div>
     <div class="hamburger-menu">
   <div class="accordion">
   <p class="accordion-title">Product<img src="./images/icon-arrow-dark.svg" alt="chevron" class="hamburger-chevron"></p>
-<ul class="accordion-ul">
+<ul class="accordion-ul hide">
       <li>Overview</li>
       <li>Pricing</li>
       <li>Marketplace</li>
@@ -105,7 +107,7 @@
 
 <div class="accordion">
   <p class="accordion-title">Company<img src="./images/icon-arrow-dark.svg" alt="chevron" class="hamburger-chevron"></p>
- <ul class="accordion-ul">
+ <ul class="accordion-ul hide">
       <li>About</li>
       <li>Team</li>
       <li>Blog</li>
@@ -115,7 +117,7 @@
 
 <div class="accordion" id="accordion3">
   <p class="accordion-title">Connect<img src="./images/icon-arrow-dark.svg" alt="chevron" class="hamburger-chevron"></p>
-   <ul class="accordion-ul">
+   <ul class="accordion-ul hide">
       <li>Contact</li>
       <li>Newsletter</li>
       <li>LinkedIn</li>
@@ -251,5 +253,6 @@
         >Frontend Mentor</a
       >. Coded by KA.
     </div>
+    <script src="main.js"></script>
   </body>
 </html>
